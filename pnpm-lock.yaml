@@ -8,6 +8,9 @@ dependencies:
   '@unocss/nuxt':
     specifier: ^0.53.6
     version: 0.53.6(postcss@8.4.27)(vite@4.4.7)(webpack@5.88.2)
+  '@unocss/reset':
+    specifier: ^0.54.0
+    version: 0.54.0
   daisyui:
     specifier: ^3.5.0
     version: 3.5.0
@@ -1892,6 +1895,10 @@ packages:
 
   /@unocss/reset@0.53.6:
     resolution: {integrity: sha512-WtZU0Q5Y9CHzitYPJ+ZGPUssVuDnRakmHETQ2EuBJgWZhgsmTECrpb78+tnJdFVowuYYQyV0CP6a07uwkFNm6g==}
+    dev: false
+
+  /@unocss/reset@0.54.0:
+    resolution: {integrity: sha512-zxvr96hVsmvJtxCLatLSCc67RBEgqvVDhEtkIFxIz5oCJzxvipJTGdKxM4F6Akyzx1A+q7zM8dimqvmC6D5Idw==}
     dev: false
 
   /@unocss/scope@0.53.6:

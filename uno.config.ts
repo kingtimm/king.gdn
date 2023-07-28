@@ -65,12 +65,6 @@ export default defineConfig({
             provider: 'bunny',
             fonts: {
                 sans: 'Arimo:400,700',
-                // arimo: {
-                //     name: 'Arimo',
-                //     weights: [
-                //         400, 700
-                //     ]
-                // }
             }
         }),
         presetDaisy(
