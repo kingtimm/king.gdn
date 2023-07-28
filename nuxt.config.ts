@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt'],
+  modules: ['@nuxt/content', '@unocss/nuxt', '@nuxtjs/color-mode'],
   css: ['@unocss/reset/tailwind.css'],
 
   content: {
@@ -9,7 +9,9 @@ export default defineNuxtConfig({
       fields: ['author', 'publishedAt', 'posterImage']
     }
   },
-
+  colorMode: {
+    dataValue: "theme",
+  },
   devtools: {
     enabled: true
   }

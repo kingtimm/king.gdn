@@ -1,12 +1,31 @@
 <template>
-    <button @click="$theme.next()">
-        <div v-if="$theme.mode.value === 'auto'">{{ $theme.mode.value }}</div>
-        <div v-if="$theme.state.value === 'dark'" class="i-carbon-moon inline-block align-middle"></div>
-        <div v-if="$theme.state.value === 'light'" class="i-carbon-sun inline-block align-middle"></div>
-        <div v-if="$theme.state.value === 'black'" class="i-carbon-contrast inline-block align-middle"></div>
+    <button @click="nextTheme()">
+        <div v-show="state === 'light'" class="i-carbon-sun inline-block align-middle"></div>
+        <div v-show="state === 'dark'" class="i-carbon-moon inline-block align-middle"></div>
+        <div v-show="state === 'black'" class="i-carbon-contrast inline-block align-middle"></div>
     </button>
 </template>
 
 <script setup lang="ts">
-const { $theme } = useNuxtApp()
+import { useCycleList } from '@vueuse/core'
+const colorMode = useColorMode()
+const themes = [
+    'light',
+    'dark',
+    'black'
+]
+const { state, next, prev } = useCycleList(themes)
+
+// match the state in the cycle
+state.value = colorMode.value
+if (colorMode.preference === 'system') {
+    console.log(`setting colormode`)
+    colorMode.preference = colorMode.value
+}
+
+function nextTheme() {
+    next()
+    colorMode.preference = state.value
+}
+
 </script>

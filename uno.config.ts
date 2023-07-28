@@ -53,10 +53,10 @@ export default defineConfig({
             "content/*.md",
         ]
     },
-    // transformers: [
-    //     transformerDirectives(),
-    //     transformerVariantGroup(),
-    // ],
+    transformers: [
+        transformerDirectives(),
+        //     transformerVariantGroup(),
+    ],
     presets: [
         presetUno(),
         presetIcons(),
