@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header-component></header-component>
+        <Header />
         <div class="mx-4 md:mx-auto md:max-w-2xl">
             <slot />
         </div>

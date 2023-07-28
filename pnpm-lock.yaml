@@ -40,6 +40,9 @@ devDependencies:
   '@unocss/preset-icons':
     specifier: ^0.53.6
     version: 0.53.6
+  '@unocss/preset-web-fonts':
+    specifier: ^0.54.0
+    version: 0.54.0
   '@unocss/preset-wind':
     specifier: ^0.53.6
     version: 0.53.6
@@ -58,6 +61,9 @@ devDependencies:
   nuxt:
     specifier: ^3.6.5
     version: 3.6.5(@types/node@18.17.1)(eslint@8.45.0)(typescript@5.1.6)
+  nuxt-time:
+    specifier: ^0.1.1
+    version: 0.1.1
 
 packages:
 
@@ -1741,6 +1747,10 @@ packages:
   /@unocss/core@0.53.6:
     resolution: {integrity: sha512-wuaLjWCzKUisHUxo4pjIdzcimdSmVa2hMHA3V7wVFBiSFX96/s7l0bvhHGFF/gMjbOnvJ+y+lBl3VKqcj9kwbA==}
 
+  /@unocss/core@0.54.0:
+    resolution: {integrity: sha512-iHfJJ8U+pVhMrbVpzMb0GImZUJu3Xmp165Q5Qr44hGOEzcMdvdBxbMSSl2VBKjRsEuNudNVhh7XJAyUcKxnSWg==}
+    dev: true
+
   /@unocss/eslint-config@0.53.6(eslint@8.45.0)(typescript@5.1.6):
     resolution: {integrity: sha512-shS4CV/TcyCqYsj/uk2uxohVNkm9qojuafej889KmiTySosIN+WDcyP0zhAX5vLHIeLbPJUbYCTrdu1TIXhsTA==}
     engines: {node: '>=14'}
@@ -1866,6 +1876,13 @@ packages:
       '@unocss/core': 0.53.6
       ofetch: 1.1.1
     dev: false
+
+  /@unocss/preset-web-fonts@0.54.0:
+    resolution: {integrity: sha512-3x1SDbJ2omwNNc3eK19zOdNU6moJg4SEr09GkeV4MMHrMXM6BHW2mEJYFSVgmTVD1RN4LZuoy/gTHMWpJhTuzw==}
+    dependencies:
+      '@unocss/core': 0.54.0
+      ofetch: 1.1.1
+    dev: true
 
   /@unocss/preset-wind@0.53.6:
     resolution: {integrity: sha512-f3/LskBGcouL9k/VEb+FHaapFFUEkQ3SjLesE0AMka5e6aKCefxtyje700cH2Sm/1RE+qdZLvrHpwLi05GVBlA==}
@@ -5957,6 +5974,17 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-time@0.1.1:
+    resolution: {integrity: sha512-MXgvzAf2+ByCsGc66qP+XbPUZRMVGwbRX5nGXlsyot+uwLVpBqQNnR8b3X46nBaEXEPy/Jqj6qaXwjTk0AYosA==}
+    dependencies:
+      '@nuxt/kit': 3.6.5
+      defu: 6.1.2
+      pathe: 1.1.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt@3.6.5(@types/node@18.17.1)(eslint@8.45.0)(typescript@5.1.6):

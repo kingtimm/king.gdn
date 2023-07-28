@@ -19,7 +19,6 @@ const { state, next, prev } = useCycleList(themes)
 // match the state in the cycle
 state.value = colorMode.value
 if (colorMode.preference === 'system') {
-    console.log(`setting colormode`)
     colorMode.preference = colorMode.value
 }
 

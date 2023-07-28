@@ -1,7 +1,7 @@
 ---
 title: Lake Gauge
 author: 'Tim King'
-publishedAt: '05/01/2023'
+publishedAt: '2023-07-28T01:42:15.000Z'
 posterImage: 'img/lakegauge.jpg'
 ---
 

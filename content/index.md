@@ -1,11 +1,11 @@
 
 <img src="img/profile.jpeg" class="float-left rounded w-28 mx-4 mb-1"></img>
 
-# 👋 Hello
+# 👋 Hey folks!
 
 
-Tim King here. I am a hobbyist tinkerer and developer, currently working at Maryville Consulting Group helping software teams.
+Tim King here. I am a hobbyist tinkerer and developer, currently working at Maryville Consulting Group helping organizations appreciate their software teams' potential.
 
 On recent hobby [projects](/projects) I've been using Vue, Nuxt, UnoCSS, Micropython.
 
-I live in St. Louis, Missouri 
+I live in St. Louis, Missouri. Cooking, golf, tinkering, and spending family time are my hobbies.

@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-const projectsQuery = queryContent('/project/')
+const projectsQuery = queryContent('/projects/')
 </script>
 
 <style scoped>

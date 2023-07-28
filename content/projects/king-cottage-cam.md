@@ -1,7 +1,7 @@
 ---
 title: King Cottage Cam
 author: 'Tim King'
-publishedAt: '8/1/2022'
+publishedAt: '2021-08-01T01:42:15.000Z'
 posterImage: 'img/cottagecam.png'
 ---
 

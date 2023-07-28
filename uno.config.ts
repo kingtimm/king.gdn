@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { presetUno, presetTypography, presetIcons } from 'unocss'
 import { presetDaisy } from 'unocss-preset-daisy'
 
@@ -61,6 +61,18 @@ export default defineConfig({
         presetUno(),
         presetIcons(),
         presetTypography(),
+        presetWebFonts({
+            provider: 'bunny',
+            fonts: {
+                sans: 'Arimo:400,700',
+                // arimo: {
+                //     name: 'Arimo',
+                //     weights: [
+                //         400, 700
+                //     ]
+                // }
+            }
+        }),
         presetDaisy(
             {
                 //@ts-ignore this is ok

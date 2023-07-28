@@ -10,8 +10,9 @@
             <div class="navbar-center">
             </div>
             <div class="navbar-end gap-4">
-                <ThemeModeToggle></ThemeModeToggle>
+                <ThemeToggle />
                 <NuxtLink href="/projects">projects</NuxtLink>
+                <NuxtLink href="/updates">updates</NuxtLink>
                 <NuxtLink href="/contact">contact</NuxtLink>
             </div>
         </div>

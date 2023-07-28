@@ -4,7 +4,7 @@
             <figure><img :src="posterImage" class="h-48 w-full object-cover object-top" /></figure>
             <div class="card-body">
                 <h2 class="card-title">{{ title }}</h2>
-                <p>{{ publishedAt }}</p>
+                <NuxtTime :datetime="publishedAt" day="numeric" month="long" year="numeric" />
             </div>
         </NuxtLink>
     </div>
@@ -17,5 +17,7 @@ const props = defineProps<{
     posterImage: string,
     path: string
 }>()
+
+
 
 </script>
