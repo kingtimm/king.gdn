@@ -7,12 +7,12 @@ posterImage: 'img/cottagecam.png'
 
 # King Cottage Cam
 
-A landing page [(link)](https://king.cottage.cam) for the cottage camera live stream and data points from [Great Lakes Observing System's Seagull product.](https://glos.org/priorities/seagull/)
+A landing page [(link)](https://king.cottage.cam) for the cottage camera live stream and data points from Great Lakes Observing System's Seagull product [(link)](https://glos.org/priorities/seagull/).
 
 <div class="mockup-browser border border-base-300">
   <div class="mockup-browser-toolbar">
     <div class="input border border-base-300">
-    <a href="king.cottage.com">
+    <a href="https://king.cottage.cam" target="_blank">
         king.cottage.com
     </a>
     </div>
@@ -29,6 +29,9 @@ There are a couple of failover strategies in place because, first, bouys get tak
 
 There is also a small api for sunset data using the [suncalc library](https://github.com/mourner/suncalc).
 
+### Highlights
+I need to make more! Creating the timelapsed recordings has some manual setup. It's a docker container I run that records the stream for a while then collapses the timeframe.
+
 ## Hardware
 The current camera is an Amcrest 4K camera that has survived since 2021. It has a 112° field of view which captures "stairs to stairs" on the beach.
 
@@ -36,6 +39,3 @@ The current camera is an Amcrest 4K camera that has survived since 2021. It has 
 - [Restreamer](https://github.com/datarhei/restreamer)
 - [Wireguard](https://wireguard.com)
 - [Nuxt](https://nuxt.com)
-
-
-[Back home](/)
