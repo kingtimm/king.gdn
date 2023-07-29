@@ -1,5 +1,5 @@
 <template>
-    <button @click="nextTheme()">
+    <button @click="nextTheme()" class="btn btn-ghost">
         <div v-show="state === 'light'" class="i-carbon-sun inline-block align-middle"></div>
         <div v-show="state === 'dark'" class="i-carbon-moon inline-block align-middle"></div>
         <div v-show="state === 'black'" class="i-carbon-contrast inline-block align-middle"></div>

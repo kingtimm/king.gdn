@@ -1,9 +1,7 @@
-
-<img src="img/profile.jpeg" class="float-left rounded w-28 mr-4"></img>
-
 # [👋] Hey folks!
+<img src="img/profile.jpeg" class="float-left mask mask-squircle w-24 mr-4"></img>
 
-Tim King here. I am a hobbyist tinkerer and developer, currently working at Maryville Consulting Group helping organizations appreciate their software teams' potential.
+Tim King here. I am a hobbyist tinkerer and developer, currently working at Maryville Consulting helping organizations appreciate their software teams' potential.
 
 On recent hobby [projects](/projects) I've been using Vue, Nuxt, UnoCSS, Micropython.
 

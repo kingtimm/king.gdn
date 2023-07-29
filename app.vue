@@ -1,14 +1,11 @@
 <template>
-  <div class="">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
 const colorMode = useColorMode()
-
 </script>
 
 <style>
