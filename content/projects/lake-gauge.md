@@ -9,7 +9,7 @@ posterImage: 'img/lakegauge.jpg'
 
 The Lake Gauge shows lake data (temp, waves, wind, and sunset) on a small unassuming screen.
 
-<img src="/public/img/lakegauge.jpg" alt="picture of the lake gauge" class="rounded-xl"/>
+<img src="/img/lakegauge.jpg" alt="picture of the lake gauge" class="rounded-xl"/>
 
 It is a fun, cheap (well, not including my time🤣) project that builds on cottage camera's back-end.
 

@@ -17,7 +17,7 @@ A landing page [(link)](https://king.cottage.cam) for the cottage camera live st
     </a>
     </div>
   </div>
-<img src="/public/img/cottagecam.png" class="object-cover w-full aspect-video">
+<img src="/img/cottagecam.png" class="object-cover w-full aspect-video">
 </div>
 
 ## Site Features
