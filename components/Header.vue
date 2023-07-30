@@ -2,9 +2,9 @@
     <div class="bg-base-200 shadow">
         <div class="navbar px-4 md:max-w-2xl md:mx-auto">
             <div class="navbar-start">
-                <NuxtLink to="/">
-                    <span class="text-xl text-secondary">king</span>
-                    <span class="text-xl">.gdn</span>
+                <NuxtLink to="/" class="text-xl">
+                    <span class="font-bold text-secondary">king</span>
+                    <span>.gdn</span>
                 </NuxtLink>
             </div>
             <div class="navbar-center">

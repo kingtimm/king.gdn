@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="flex flex-col min-h-screen">
         <Header />
-        <div class="m-4 md:mx-auto md:max-w-2xl">
+        <div class="m-4 md:mx-auto md:max-w-xl">
             <slot />
         </div>
         <Footer />
-        <div class="h-screen"></div>
+        <div class="flex-1"></div>
     </div>
 </template>
 
