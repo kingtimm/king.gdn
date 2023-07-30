@@ -4,7 +4,7 @@
             <h1>projects</h1>
         </div>
         <p>Below are some project pages that get updated as the efforts do. 📈</p>
-        <div class="w-full grid grid-cols-2 gap-6 my-6">
+        <div class="w-full grid grid-cols-2 gap-6 p-6">
             <ContentNavigation v-slot="{ navigation }" :query="projectsQuery">
                 <div v-for="link of navigation[0].children" :key="link._path" class="w-full">
                     <ProjectCard :path="link._path" :title="link.title" :published-at="link.publishedAt"
