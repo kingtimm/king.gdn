@@ -10,7 +10,7 @@
                         <div class="i-carbon-logo-github inline-block align-middle mr-1"></div>
                     </a>
                     <a href="https://elk.zone/mas.town/@timmyking" class="no-underline font-normal">
-                        <div class="i-carbon-logo-twitter inline-block align-middle mr-1"></div>
+                        <div class="i-carbon-logo-mastodon inline-block align-middle mr-1"></div>
                     </a>
                 </div>
             </div>

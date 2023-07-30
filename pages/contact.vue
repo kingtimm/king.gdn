@@ -15,10 +15,9 @@
             </li>
             <li>
                 <a href="https://elk.zone/mas.town/@timmyking" class="no-underline font-normal">
-                    <div class="i-carbon-logo-twitter inline-block align-middle mr-1"></div>timmyking
+                    <div class="i-carbon-logo-mastodon inline-block align-middle mr-1"></div>timmyking@mas.town
                 </a>
             </li>
-    
         </ul>
     </div>
 </template>
