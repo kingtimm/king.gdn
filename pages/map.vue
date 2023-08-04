@@ -1,7 +1,11 @@
 <script setup>
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-</script>
+
+</script>   
 
 <template>
-    <pre>{{ navigation }}</pre>
+    <ContentFolderListing folderName="updates" v-slot="{ data }">
+        <pre>
+            {{ data }}
+        </pre>
+    </ContentFolderListing>
 </template>
