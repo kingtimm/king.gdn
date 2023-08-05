@@ -29,7 +29,7 @@ const { data } = await useAsyncData(
     props.folderName,
     () => {
 
-        const queryParams: QueryBuilderParams = {
+        const queryParams = {
             where: {
                 _path: { $contains: `${props.folderName}/` }
             },
@@ -37,7 +37,7 @@ const { data } = await useAsyncData(
                 publishedAt: -1
             },
             only: pickedKeys
-        }
+        } as unknown as QueryBuilderParams
 
         // const response = queryContent<ChildDoc[]>(props.folderName).only(pickedKeys).sort({ publishedAt: -1 }).find()
         const response = queryContent<ChildDoc[]>(queryParams).find()
