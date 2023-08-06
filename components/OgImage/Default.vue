@@ -22,7 +22,8 @@ const shouldShowImage = computed(() => {
 </script>
 
 <template>
-    <div class="pl-8 w-full h-full flex flex-col og-container justify-center">
+    <div style="color: #1c1c1c; background-image: linear-gradient(-135deg, #cccccc 0%, #399FB1 100%);"
+        class="pl-8 w-full h-full flex flex-col justify-center">
         <img v-if="shouldShowImage" :src="props.posterImage"
             class="h-48 w-96 posterimage left-0 top-0 object-cover object-top" />
         <h1>
@@ -32,8 +33,8 @@ const shouldShowImage = computed(() => {
             {{ props.description }}
         </h2>
     </div>
-    <div class="absolute right-0 top-0 m-8 logo text-right">
-        <span class="font-bold king">king</span>
+    <div style="font-size: 50px" class="absolute right-0 top-0 m-8 logo text-right">
+        <span style="color: #399FB1; font-weight: bold;" class="font-bold king">king</span>
         <span>.gdn</span>
         <p>
             <NuxtTime class="text-right text-xl opacity-80" :datetime="props.publishedAt!" day="numeric" month="long"
@@ -51,23 +52,5 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: normal;
-}
-
-.og-container {
-    color: #1c1c1c;
-    background-image: linear-gradient(-135deg, #cccccc 0%, #399FB1 100%);
-}
-
-.logo {
-    font-size: 50px
-}
-
-.posterimage {
-    border: 4px solid gray
-}
-
-.king {
-    color: #399FB1;
-    font-weight: bold;
 }
 </style>
