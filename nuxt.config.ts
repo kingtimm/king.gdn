@@ -18,14 +18,9 @@ export default defineNuxtConfig({
     //     '/projects/',
     //   ]
     // }
-  },
-  routeRules: {
-    '/projects/**': {
-      prerender: true
-    },
-    '/updates/**': {
-      prerender: true
-    },
+    prerender: {
+      crawlLinks: true
+    }
   },
   content: {
     // documentDriven: true
