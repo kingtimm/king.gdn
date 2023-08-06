@@ -8,7 +8,17 @@ export default defineNuxtConfig({
     'nuxt-og-image'
   ],
   css: ['@unocss/reset/tailwind.css'],
-
+  experimental: {
+    viewTransition: true
+  },
+  nitro: {
+    prerender: {
+      routes: [
+        'updates/',
+        'projects/',
+      ]
+    }
+  },
   content: {
     // documentDriven: true
     navigation: {
