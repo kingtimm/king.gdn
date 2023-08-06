@@ -22,6 +22,9 @@ export default defineNuxtConfig({
       crawlLinks: true
     }
   },
+  ogImage: {
+    runtimeBrowser: false
+  },
   content: {
     // documentDriven: true
     navigation: {
