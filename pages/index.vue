@@ -4,6 +4,13 @@
     </main>
 </template>
 
-<script>
-// const query = queryContent('/home')
+<script setup lang="ts">
+// const ogImageOptions = {
+//     component: 'OgImage',
+//     title: 'Home',
+//     description: 'Tim King - Hobbyist Tinkerer',
+// }
+
+// defineOgImage(ogImageOptions)
 </script>
+

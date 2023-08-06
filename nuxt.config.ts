@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    'nuxt-time'
+    'nuxt-time',
+    'nuxt-og-image'
   ],
   css: ['@unocss/reset/tailwind.css'],
 
@@ -19,5 +20,8 @@ export default defineNuxtConfig({
   },
   devtools: {
     enabled: true
-  }
+  },
+  site: {
+    url: 'https://king.gdn',
+  },
 })

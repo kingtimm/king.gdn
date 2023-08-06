@@ -9,4 +9,26 @@
         <NuxtLink to="/updates" class="prose text-xs">back to updates</NuxtLink>
     </main>
 </template>
-  
+
+<script setup>
+const path = useRoute().path
+
+const data = await queryContent(path)
+    .only(['_path', 'title', 'posterImage', 'description', 'publishedAt'])
+    .findOne()
+
+const ogImageOptions = {
+    title: data.title,
+    description: data.description,
+    component: 'Default',
+    posterImage: '',
+    publishedAt: data.publishedAt
+}
+
+if (data.posterImage) {
+    ogImageOptions.posterImage = `/${data.posterImage}`
+}
+
+defineOgImage(ogImageOptions)
+
+</script>
