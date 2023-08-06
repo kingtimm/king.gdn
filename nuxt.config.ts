@@ -12,12 +12,20 @@ export default defineNuxtConfig({
     viewTransition: true
   },
   nitro: {
-    prerender: {
-      routes: [
-        '/updates/',
-        '/projects/',
-      ]
-    }
+    // prerender: {
+    //   routes: [
+    //     '/updates/',
+    //     '/projects/',
+    //   ]
+    // }
+  },
+  routeRules: {
+    '/projects/**': {
+      prerender: true
+    },
+    '/updates/**': {
+      prerender: true
+    },
   },
   content: {
     // documentDriven: true
