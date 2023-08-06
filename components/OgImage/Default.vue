@@ -14,7 +14,6 @@ const props = defineProps({
 })
 
 const shouldShowImage = computed(() => {
-    console.log(`poster image! ${props.posterImage}`)
     if (props.posterImage === undefined)
         return false
     return true
