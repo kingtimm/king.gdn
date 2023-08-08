@@ -26,8 +26,10 @@ const shouldShowImage = computed(() => {
         class="w-full h-full flex">
         <div class="flex flex-col h-full p-8" :class="shouldShowImage ? 'w-2/3' : 'w-full'">
             <div style="font-size: 60px;" class="flex-none">
-                <span style="color: #399FB1; font-weight: bold;">king</span>.gdn
-                <p class="text-2xl">
+                <p>
+                    <span style="color: #399FB1; font-weight: bold;">king</span>.gdn
+                </p>
+                <p class="text-3xl">
                     <NuxtTime class="opacity-80" :datetime="props.publishedAt!" day="numeric" month="long" year="numeric">
                     </NuxtTime>
                 </p>
@@ -41,6 +43,8 @@ const shouldShowImage = computed(() => {
                 </h2>
             </div>
         </div>
-        <img v-if="shouldShowImage" :src="props.posterImage" class="h-full w-1/3" style="object-fit: cover;" />
+        <div v-if="shouldShowImage" class="h-full w-1/3">
+            <img :src="props.posterImage!" style="object-fit: cover;" />
+        </div>
     </div>
 </template>
