@@ -9,7 +9,7 @@
                     <a href="https://github.com/kingtimm" class="no-underline font-normal">
                         <div class="i-carbon-logo-github inline-block align-middle mr-1"></div>
                     </a>
-                    <a href="https://elk.zone/mas.town/@timmyking" class="no-underline font-normal">
+                    <a href="https://elk.zone/mastodon.social/@timking" class="no-underline font-normal">
                         <div class="i-carbon-logo-mastodon inline-block align-middle mr-1"></div>
                     </a>
                 </div>

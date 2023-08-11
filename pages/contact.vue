@@ -14,8 +14,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://elk.zone/mas.town/@timmyking" class="no-underline font-normal">
-                    <div class="i-carbon-logo-mastodon inline-block align-middle mr-1"></div>timmyking@mas.town
+                <a href="https://elk.zone/mastodon.social/@timking" class="no-underline font-normal">
+                    <div class="i-carbon-logo-mastodon inline-block align-middle mr-1"></div>@timking@mastodon.social
                 </a>
             </li>
         </ul>
