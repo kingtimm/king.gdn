@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-base-200 shadow">
+    <div class="bg-base-300/70 shadow sticky top-0 z10 backdrop-blur">
         <div class="navbar px-4 md:max-w-2xl md:mx-auto">
             <div class="navbar-start">
                 <NuxtLink to="/" class="text-xl">

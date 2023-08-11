@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer footer-center p-10 bg-base-200 shadow text-base-content">
+    <footer class="footer footer-center p-10 bg-base-300/70 shadow text-base-content">
         <div class="px-4 md:max-w-2xl md:mx-auto">
             <div>
                 <p class="text-xs">Copyright © 2023 - All right reserved</p>
