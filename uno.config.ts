@@ -51,7 +51,7 @@ export default defineConfig({
         filesystem: [
             "content/**/*.md",
             "content/*.md",
-        ]
+        ],
     },
     transformers: [
         transformerDirectives(),
@@ -62,7 +62,7 @@ export default defineConfig({
         presetIcons(),
         presetTypography(),
         presetWebFonts({
-            provider: 'bunny',
+            provider: 'google',
             fonts: {
                 sans: 'Arimo:400,700',
             }

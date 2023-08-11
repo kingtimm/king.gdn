@@ -6,13 +6,15 @@
 </template>
 
 <script setup lang="ts">
+import { OgImageOptions } from 'nuxt-og-image/dist/runtime/types';
+
 const path = useRoute().path
 
 const data = await queryContent(path)
     .only(['_path', 'title', 'posterImage', 'description', 'publishedAt'])
     .findOne()
 
-const ogImageOptions = {
+const ogImageOptions: OgImageOptions = {
     title: data.title,
     description: data.description,
     component: 'Default',

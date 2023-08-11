@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import assert from 'assert'
+<script setup>
+import { computed } from 'vue'
 
 // inherited attrs can mess up the satori parser
 defineOptions({
@@ -14,37 +14,37 @@ const props = defineProps({
 })
 
 const shouldShowImage = computed(() => {
-    if (props.posterImage === undefined)
-        return false
-    return true
+    return (props.posterImage !== undefined)
 })
 
 </script>
 
+
 <template>
-    <div style="color: #1c1c1c; background-image: linear-gradient(135deg, #cccccc 0%, #399FB1 100%);"
-        class="w-full h-full flex">
-        <div class="flex flex-col h-full p-8" :class="shouldShowImage ? 'w-2/3' : 'w-full'">
-            <div style="font-size: 60px;" class="flex-none">
-                <p>
-                    <span style="color: #399FB1; font-weight: bold;">king</span>.gdn
+    <div style="
+        color: #1c1c1c; 
+        background-image: linear-gradient(135deg, #cccccc 0%, #399FB1 100%);" class="h-full"
+        :class="shouldShowImage ? 'w-2/3' : 'w-full'">
+        <div class="flex-col h-full p-8">
+            <div class="">
+                <p class="text-7xl p-0 m-0">
+                    <span style="color: #399FB1;" class="font-bold">king</span>.gdn
                 </p>
                 <p class="text-3xl">
-                    <NuxtTime class="opacity-80" :datetime="props.publishedAt!" day="numeric" month="long" year="numeric">
+                    <NuxtTime :datetime="props.publishedAt" day="numeric" month="long" year="numeric">
                     </NuxtTime>
                 </p>
             </div>
-            <div class="grow flex flex-col justify-center">
-                <h1 class="my-1" style="font-size: 70px;">
+            <div class="flex-col flex-1 justify-center">
+                <h1 class="my-1 text-7xl font-bold" style="font-size: 70px;">
                     {{ props.title }}
                 </h1>
-                <h2 style="font-size: 40px; font-weight: normal;">
+                <h2 class="text-5xl font-normal">
                     {{ props.description }}
                 </h2>
             </div>
         </div>
-        <div v-if="shouldShowImage" class="h-full w-1/3">
-            <img :src="props.posterImage!" style="object-fit: cover;" />
-        </div>
     </div>
+    <img :src=props.posterImage v-if="shouldShowImage" class="h-full w-1/3 absolute top-0 right-0"
+        style="object-fit: cover;" />
 </template>

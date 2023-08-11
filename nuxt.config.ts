@@ -12,21 +12,16 @@ export default defineNuxtConfig({
     viewTransition: true
   },
   nitro: {
-    // prerender: {
-    //   routes: [
-    //     '/updates/',
-    //     '/projects/',
-    //   ]
-    // }
     prerender: {
       crawlLinks: true
     }
   },
   ogImage: {
-    runtimeBrowser: false
+    debug: true,
+    fonts: ['Arimo:400', 'Arimo:700'],
+    runtimeBrowser: false,
   },
   content: {
-    // documentDriven: true
     navigation: {
       fields: ['author', 'publishedAt', 'posterImage']
     }
