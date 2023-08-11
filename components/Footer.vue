@@ -1,19 +1,21 @@
 <template>
-    <footer class="footer footer-center p-10 bg-base-300/70 shadow text-base-content">
-        <div class="px-4 md:max-w-2xl md:mx-auto">
-            <div>
-                <p class="text-xs">Copyright © 2023 - All right reserved</p>
-            </div>
-            <div class="grid grid-flow-col gap-4 text-xl">
-                <div class="grid grid-flow-col gap-4">
-                    <a href="https://github.com/kingtimm" class="no-underline font-normal">
-                        <div class="i-carbon-logo-github inline-block align-middle mr-1"></div>
-                    </a>
-                    <a href="https://elk.zone/mastodon.social/@timking" class="no-underline font-normal">
-                        <div class="i-carbon-logo-mastodon inline-block align-middle mr-1"></div>
-                    </a>
-                </div>
-            </div>
+  <footer class="bg-base-300/70 p-10 text-base-content shadow footer footer-center">
+    <div class="px-4 md:mx-auto md:max-w-2xl">
+      <div>
+        <p class="text-xs">
+          Copyright © 2023 - All right reserved
+        </p>
+      </div>
+      <div class="grid grid-flow-col gap-4 text-xl">
+        <div class="grid grid-flow-col gap-4">
+          <a href="https://github.com/kingtimm" class="font-normal no-underline">
+            <div class="i-carbon-logo-github mr-1 inline-block align-middle" />
+          </a>
+          <a href="https://elk.zone/mastodon.social/@timking" class="font-normal no-underline">
+            <div class="i-carbon-logo-mastodon mr-1 inline-block align-middle" />
+          </a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 </template>

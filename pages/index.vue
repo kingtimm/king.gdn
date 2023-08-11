@@ -1,9 +1,3 @@
-<template>
-    <main>
-        <ContentDoc path="/home" class="prose mx-auto" />
-    </main>
-</template>
-
 <script setup lang="ts">
 // const ogImageOptions = {
 //     component: 'OgImage',
@@ -14,3 +8,8 @@
 // defineOgImage(ogImageOptions)
 </script>
 
+<template>
+  <main>
+    <ContentDoc path="/home" class="mx-auto prose" />
+  </main>
+</template>

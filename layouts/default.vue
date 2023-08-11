@@ -1,17 +1,17 @@
-<template>
-    <div class="flex flex-col min-h-screen">
-        <Header />
-        <div class="m-4 md:mx-auto md:w-xl">
-            <slot />
-        </div>
-        <Footer />
-        <div class="flex-1"></div>
-    </div>
-</template>
-
 <script setup lang="ts">
 
 </script>
+
+<template>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+    <div class="m-4 md:mx-auto md:w-xl">
+      <slot />
+    </div>
+    <Footer />
+    <div class="flex-1" />
+  </div>
+</template>
 
 <style>
 h1,

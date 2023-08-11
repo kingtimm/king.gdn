@@ -1,11 +1,11 @@
 <script setup>
 
-</script>   
+</script>
 
 <template>
-    <ContentFolderListing folderName="updates" v-slot="{ data }">
-        <pre>
+  <ContentFolderListing v-slot="{ data }" folder-name="updates">
+    <pre>
             {{ data }}
         </pre>
-    </ContentFolderListing>
+  </ContentFolderListing>
 </template>
