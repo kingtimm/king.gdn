@@ -15,24 +15,27 @@
                 <NuxtLink v-for="link in links" :to="link.url" class="hidden md:flex">
                     {{ link.display }}
                 </NuxtLink>
-                <div class="dropdown dropdown-end md:hidden">
-                    <div class="btn btn-ghost" @click.stop="dropdown = !dropdown">
+                <div class="md:hidden">
+                    <button class="btn btn-ghost" @click.stop="dropdown = !dropdown">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             class="inline-block w-5 h-5 stroke-current">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16">
                             </path>
                         </svg>
-                    </div>
-                    <ul class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 w-52" v-show="dropdown"
-                        :class="{ 'dropdown-open': dropdown }" v-on-click-outside.bubble="(event) => dropdownHandler(event)"
-                        @click="dropdown = false">
-                        <li v-for=" link  in  links ">
-                            <NuxtLink :to="link.url" class="flex flex-col items-center text-lg">
-                                {{ link.display }}
-                            </NuxtLink>
-                        </li>
-                    </ul>
+                    </button>
+                    <Teleport to="body">
+                        <div v-if=dropdown>
+                            <ul class="fixed inset-0 m-auto max-w-7/8 flex flex-col justify-center z-[999] gap-8 p-8 shadow bg-base-300/95"
+                                v-on-click-outside.bubble="(event) => dropdownHandler(event)" @click="dropdown = false">
+                                <li v-for=" link  in  links ">
+                                    <NuxtLink :to="link.url" class="flex flex-col items-center text-lg btn">
+                                        {{ link.display }}
+                                    </NuxtLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </Teleport>
                 </div>
             </div>
         </div>
