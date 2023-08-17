@@ -26,7 +26,6 @@ export default defineNuxtConfig({
     },
   },
   ogImage: {
-    debug: true,
     fonts: ['Arimo:400', 'Arimo:700'],
     runtimeBrowser: false,
   },
@@ -36,12 +35,12 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-    dataValue: 'theme',
+    dataValue: 'theme', // this ties into how Daisy uses themes
   },
   devtools: {
     enabled: true,
   },
   site: {
-    url: 'https://king.gdn',
+    url: 'https://king.gdn', // helps og-images be created
   },
 })

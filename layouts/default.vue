@@ -4,7 +4,7 @@
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <Header />
+    <!-- <Header /> -->
     <div class="m-4 md:mx-auto md:w-xl">
       <slot />
     </div>

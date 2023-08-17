@@ -7,7 +7,7 @@ const themes = [
   'dark',
   'black',
 ]
-const { state, next, _prev } = useCycleList(themes)
+const { state, next } = useCycleList(themes)
 
 // match the state in the cycle
 state.value = colorMode.value
