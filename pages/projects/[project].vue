@@ -23,15 +23,7 @@ defineOgImage(ogImageOptions)
 
 <template>
   <article class="mx-auto prose">
-    <ContentDoc />
-    <NuxtLink to="/projects" class="text-xs prose">
-      back to projects
-    </NuxtLink>
-  </article>
-</template>
-
-<template>
-  <article class="mx-auto prose">
+    <h1>{{ data.title }}</h1>
     <ContentDoc />
     <NuxtLink to="/projects" class="text-xs prose">
       back to projects
