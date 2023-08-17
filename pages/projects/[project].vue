@@ -29,3 +29,12 @@ defineOgImage(ogImageOptions)
     </NuxtLink>
   </article>
 </template>
+
+<template>
+  <article class="mx-auto prose">
+    <ContentDoc />
+    <NuxtLink to="/projects" class="text-xs prose">
+      back to projects
+    </NuxtLink>
+  </article>
+</template>
