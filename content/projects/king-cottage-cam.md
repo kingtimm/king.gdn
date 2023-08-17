@@ -5,8 +5,6 @@ publishedAt: '2021-08-01T01:42:15.000Z'
 posterImage: 'img/cottagecam.png'
 ---
 
-# King Cottage Cam
-
 A landing page [(link)](https://king.cottage.cam) for the cottage camera live stream and data points from Great Lakes Observing System's Seagull product [(link)](https://glos.org/priorities/seagull/).
 
 <div class="mockup-browser border border-base-300">

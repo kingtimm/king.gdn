@@ -1,5 +1,11 @@
 <template>
     <article class="prose mx-auto">
+        <h1>{{ data.title }}</h1>
+        <p class="text-xs opacity-80">
+            Original Project Date: <NuxtTime :datetime="data.publishedAt" day="numeric" month="long"
+            year="numeric" />
+        </p>
+            
         <ContentDoc />
         <NuxtLink to="/projects" class="prose text-xs">back to projects</NuxtLink>
     </article>

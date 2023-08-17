@@ -5,8 +5,6 @@ publishedAt: '2023-07-28T01:42:15.000Z'
 posterImage: 'img/lakegauge.jpg'
 ---
 
-# Lake Gauge
-
 The Lake Gauge shows lake data (temp, waves, wind, and sunset) on a small unassuming screen.
 
 <img src="/img/lakegauge.jpg" alt="picture of the lake gauge" class="rounded-xl"/>
