@@ -22,7 +22,7 @@ export const themes = [
       'secondary': '#3aa0b2',
       'accent': '#c44335',
       'neutral': '#161b27',
-      'base-100': '#2c373f',
+      'base-100': '#213341',
       'info': '#acd9ec',
       'success': '#176341',
       'warning': '#f7c76e',

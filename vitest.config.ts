@@ -2,8 +2,7 @@ import { defineVitestConfig } from 'nuxt-vitest/config'
 
 export default defineVitestConfig({
   test: {
-    dir: 'tests/unit',
-    environment: 'nuxt',
+    dir: 'tests/',
     environmentOptions: {
       nuxt: {
         overrides: {
