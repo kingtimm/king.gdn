@@ -19,19 +19,18 @@ const links: LinkType[] = [
 </script>
 
 <template>
-  <div class="sticky top-0 z10 bg-base-300/70 shadow backdrop-blur">
+  <div class="sticky top-0 z10 bg-base-200/70 shadow backdrop-blur">
     <div class="px-4 navbar md:mx-auto md:max-w-2xl">
       <div class="navbar-start">
-        <NuxtLink to="/" class="text-xl">
-          <span class="font-bold text-secondary">king</span>
+        <NuxtLink to="/" class="text-xl no-underline">
+          <span class="text- font-bold text-primary">king</span>
           <span>.gdn</span>
         </NuxtLink>
       </div>
-      <div class="navbar-center" />
       <div class="navbar-end md:gap-4">
         <ThemeToggle />
 
-        <NuxtLink v-for="link in links" :key="link.url" :to="link.url" class="hidden md:flex">
+        <NuxtLink v-for="link in links" :key="link.url" :to="link.url" class="hidden no-underline md:flex">
           {{ link.display }}
         </NuxtLink>
         <div class="md:hidden">
@@ -50,7 +49,7 @@ const links: LinkType[] = [
             <div v-if="dropdown">
               <ul
                 v-on-click-outside.bubble="(event) => dropdownHandler(event)"
-                class="fixed inset-0 z-[999] m-auto max-w-7/8 flex flex-col justify-center gap-8 bg-base-300/95 p-8 shadow" @click="dropdown = false"
+                class="fixed inset-0 z-[999] m-auto max-w-7/8 flex flex-col justify-center gap-8 bg-base-200/95 p-8 shadow" @click="dropdown = false"
               >
                 <li v-for=" link in links " :key="link.url">
                   <NuxtLink :to="link.url" class="flex flex-col items-center text-lg btn">

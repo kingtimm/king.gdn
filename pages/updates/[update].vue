@@ -31,7 +31,7 @@ defineOgImage(ogImageOptions)
       />
       <ContentRenderer :value="doc" />
     </ContentDoc>
-    <NuxtLink to="/updates" class="text-xs prose">
+    <NuxtLink to="/updates" class="text-xs text-secondary prose">
       back to updates
     </NuxtLink>
   </main>

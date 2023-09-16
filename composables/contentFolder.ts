@@ -5,7 +5,7 @@ interface ChildDoc extends ParsedContent {
   posterImage: string
 }
 
-const pickedKeys = ['_path', 'title', 'publishedAt', 'posterImage']
+const pickedKeys = ['_path', 'title', 'publishedAt', 'posterImage', 'excerpt']
 
 const union = [...pickedKeys] as const
 type PickKeys = typeof union[number]

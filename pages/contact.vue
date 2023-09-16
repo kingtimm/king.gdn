@@ -3,18 +3,18 @@
     <h1>
       contact
     </h1>
-    <ul class="list-none no-underline">
+    <ul class="list-none">
       <li>
-        <div class="i-carbon-email mr-1 inline-block align-middle" />tim@king.gdn
+        <div class="i-carbon-email mr-1 inline-block align-middle" /><a class="">tim@king.gdn</a>
       </li>
       <li>
-        <a href="https://github.com/kingtimm" class="font-normal no-underline">
-          <div class="i-carbon-logo-github mr-1 inline-block align-middle" />kingtimm
+        <div class="i-carbon-logo-github mr-1 inline-block align-middle" />
+        <a href="https://github.com/kingtimm" class="font-normal">kingtimm
         </a>
       </li>
       <li>
-        <a href="https://elk.zone/mastodon.social/@timking" class="font-normal no-underline">
-          <div class="i-carbon-logo-mastodon mr-1 inline-block align-middle" />@timking@mastodon.social
+        <div class="i-carbon-logo-mastodon mr-1 inline-block align-middle" />
+        <a href="https://elk.zone/mastodon.social/@timking" class="font-normal">@timking@mastodon.social
         </a>
       </li>
     </ul>

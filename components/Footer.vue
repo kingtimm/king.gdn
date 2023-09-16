@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-base-300/70 p-10 text-base-content shadow footer footer-center">
+  <footer class="bg-base-200/70 p-10 text-base-content shadow footer footer-center">
     <div class="px-4 md:mx-auto md:max-w-2xl">
       <div>
         <p class="text-xs">
