@@ -2,12 +2,12 @@
 title: Baby Names
 author: 'Tim King'
 publishedAt: '2023-12-28T01:42:15.000Z'
-posterImage: 'img/invite.gif'
+posterImage: 'img/crsn.png'
 ---
 
 Generate automatic or crowdsourced recommendations for your new room mate.
 
-<img src="/img/invite.gif" alt="invite motion" class="rounded-xl"/>
+<img src="/img/crsn.png" alt="invite motion" class="rounded-xl"/>
 
 [Baby Name Generator](https://crsn.vercel.app)
 
