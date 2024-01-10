@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-time',
     'nuxt-og-image',
-    'nuxt-vitest',
+    '@nuxt/test-utils/module'
   ],
   css: ['@unocss/reset/tailwind.css'],
   app: {

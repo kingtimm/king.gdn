@@ -1,6 +1,6 @@
 // @vitest-environment nuxt
 import { describe, expect, it } from 'vitest'
-import { mockNuxtImport, mountSuspended } from 'nuxt-vitest/utils'
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
 import App from '~/app.vue'
 
 describe('nuxt content queries features', () => {
