@@ -1,5 +1,6 @@
 import daisyui from 'daisyui';
 import typography from '@tailwindcss/typography'
+import { ColorScheme } from '#build/components';
 
 export const themes = [
   {
@@ -46,7 +47,25 @@ export const themes = [
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'a': {
+              // 'color': 'hsl(var(--p))',
+              'text-decoration': 'underline',
+              'text-underline-offset': '6px',
+              // 'text-decoration-color': 'hsl(var(--s))',
+              'text-decoration-color': themes[0].light?.secondary,
+            },
+            '.prose h1, .prose h2 a, .prose h3 a, .prose h4 a, .prose h5 a, .prose h6 a': {
+              'text-decoration': 'none',
+              // 'color': 'hsl(var(--s))',
+            },
+          }
+        }
+      }
+    },
   },
   plugins: [daisyui, typography],
   daisyui: {
