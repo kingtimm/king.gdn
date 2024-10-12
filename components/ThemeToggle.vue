@@ -22,8 +22,8 @@ function nextTheme() {
 
 <template>
   <button class="btn btn-ghost" @click="nextTheme()">
-    <div v-show="state === 'light'" class="i-carbon-sun inline-block align-middle" />
-    <div v-show="state === 'dark'" class="i-carbon-moon inline-block align-middle" />
-    <div v-show="state === 'black'" class="i-carbon-contrast inline-block align-middle" />
+    <Icon v-show="state === 'light'" name="i-carbon-sun" class="inline-block align-middle" />
+    <Icon v-show="state === 'dark'" name="i-carbon-moon" class="inline-block align-middle" />
+    <Icon v-show="state === 'black'" name="i-carbon-contrast" class="inline-block align-middle" />
   </button>
 </template>

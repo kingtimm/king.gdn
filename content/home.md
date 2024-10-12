@@ -5,6 +5,6 @@
 
 Tim King here. I am a hobbyist tinkerer and developer, currently working at Maryville Consulting helping organizations appreciate their software teams' potential.
 
-On recent hobby [projects](/projects) I've been using Vue, Nuxt, UnoCSS, Micropython.
+On recent hobby [projects](/projects) I've been using Vue, Nuxt, Micropython.
 
 I live in St. Louis, Missouri. Cooking, golf, tinkering, and spending family time are my hobbies.
