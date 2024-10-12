@@ -6,7 +6,7 @@
     <p class="pb4">
       Below are some project pages that get updated as the efforts do. 📈
     </p>
-    <div class="grid auto-rows-fr grid-cols-2 w-full gap-3 md:gap-6">
+    <div class="grid auto-rows-fr md:grid-cols-2 w-full gap-3 md:gap-6">
       <ContentFolderListing v-slot="{ data }" folder-name="projects">
         <ProjectCard
           v-for="link of data" :key="link._path" :path="link._path" :title="link.title"
