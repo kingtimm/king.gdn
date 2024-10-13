@@ -9,14 +9,14 @@ const ogImageOptions = {
   title: data.title,
   description: data.description,
   component: 'Default',
-  posterImage: '',
+  posterImage: undefined,
   publishedAt: data.publishedAt,
 }
 
 if (data.posterImage)
   ogImageOptions.posterImage = `/${data.posterImage}`
 
-defineOgImage(ogImageOptions)
+defineOgImageComponent('Default', ogImageOptions)
 </script>
 
 <template>

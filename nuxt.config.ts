@@ -28,14 +28,16 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      routes: ['/'],
       crawlLinks: true,
     },
   },
-
+  
   ogImage: {
+    debug: true,
+    zeroRuntime: true,
     fonts: ['Arimo:400', 'Arimo:700'],
   },
-
   content: {
     navigation: {
       fields: ['author', 'publishedAt', 'posterImage'],
@@ -55,5 +57,4 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-10-11',
-
 })

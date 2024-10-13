@@ -1,6 +1,5 @@
 import daisyui from 'daisyui';
 import typography from '@tailwindcss/typography'
-import { ColorScheme } from '#build/components';
 
 export const themes = [
   {
@@ -69,6 +68,7 @@ module.exports = {
   },
   plugins: [daisyui, typography],
   daisyui: {
+    logs: false,
     themes
   }
 }

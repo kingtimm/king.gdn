@@ -1,16 +1,18 @@
-<script setup>
+<script setup lang='ts'>
 import { computed } from 'vue'
+
+interface OgImageOptions {
+  title: string,
+  description: string,
+  publishedAt: string,
+  posterImage?: string,
+}
+
+const props = defineProps<OgImageOptions>()
 
 // inherited attrs can mess up the satori parser
 defineOptions({
   inheritAttrs: false,
-})
-
-const props = defineProps({
-  title: String,
-  description: String,
-  publishedAt: String,
-  posterImage: String,
 })
 
 const shouldShowImage = computed(() => {
