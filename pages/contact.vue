@@ -13,8 +13,8 @@
         </a>
       </li>
       <li>
-        <Icon name="i-carbon-logo-mastodon" class=" mr-1 inline-block align-middle" />
-        <a href="https://elk.zone/mastodon.social/@timking" class="font-normal">@timking@mastodon.social
+        <Icon name="i-logos:bluesky" class=" mr-1 inline-block align-middle" />
+        <a href="https://bsky.app/profile/timk.ing" class="font-normal">@timk.ing
         </a>
       </li>
     </ul>
